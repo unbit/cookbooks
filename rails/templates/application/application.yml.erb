@@ -1,0 +1,26 @@
+# All the application environment configuration go here
+# This is the configuration that SHOULD NOT be shared in
+# the repo (secret tokens, api keys, ...)
+# The content of this sample file is here just as a documentation
+# of what parameters are used in the application
+
+# Signed cookies secret key, should be generated with rake secret
+SECRET_KEY_BASE: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+RIOT_API_KEY   : XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+DEVISE_SECRET_KEY: YYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+REDIS_URL: <%= node['redis_url'] %>
+# staging specific values
+staging:
+    RACK_ENV: production
+    RAILS_ENV: production
+    SECRET_KEY_BASE: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+    RIOT_API_KEY   : XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+    DEVISE_SECRET_KEY: YYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+# production specific values
+production:
+    RACK_ENV: production
+    RAILS_ENV: production
+    SECRET_KEY_BASE: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+    RIOT_API_KEY   : XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+    SECRET_KEY_BASE: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+    DEVISE_SECRET_KEY: YYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
