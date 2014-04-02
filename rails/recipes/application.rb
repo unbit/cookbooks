@@ -4,6 +4,6 @@ node[:deploy].each do |application, deploy|
     owner deploy[:user]
     group deploy[:group]
     source "application.yml.erb"
-    variables(:redis_url => deploy[:redis_url])
+    variables(:redis_url => deploy[:redis_url], :devise_key => deploy[:devise_key])
   end
 end
