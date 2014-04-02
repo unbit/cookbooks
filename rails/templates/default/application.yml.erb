@@ -7,7 +7,7 @@
 # Signed cookies secret key, should be generated with rake secret
 SECRET_KEY_BASE: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 RIOT_API_KEY   : XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-DEVISE_SECRET_KEY: YYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+DEVISE_SECRET_KEY: <%= @devise_key %>
 REDIS_URL: <%= @redis_url %>
 # staging specific values
 staging:
@@ -15,7 +15,7 @@ staging:
     RAILS_ENV: production
     SECRET_KEY_BASE: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
     RIOT_API_KEY   : XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-    DEVISE_SECRET_KEY: YYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+    DEVISE_SECRET_KEY: <%= @devise_key %>
 # production specific values
 production:
     RACK_ENV: production
