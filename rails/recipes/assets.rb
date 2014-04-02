@@ -1,3 +1,5 @@
+include_recipe "rails::application"
+
 node[:deploy].each do |application, deploy|
   rails_env = deploy[:rails_env]
   execute 'rake assets:precompile' do
