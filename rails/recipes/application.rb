@@ -1,5 +1,5 @@
 node[:deploy].each do |application, deploy|
-  template "#{deploy[:deploy_to]}/current/config/application.yml" do
+  template "#{deploy[:deploy_to]}/shared/config/application.yml" do
     mode '0644'
     owner deploy[:user]
     group deploy[:group]
