@@ -10,15 +10,15 @@ RIOT_API_KEY   : XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 DEVISE_SECRET_KEY: <%= @devise_key %>
 REDIS_URL: <%= @redis_url %>
 
-RGTS_LOCALE: <%= rgts_locale %>
+RGTS_LOCALE: <%= @rgts_locale %>
 
-SMTP_HOST: <%= smtp[:host] %>
-SMTP_PORT: <%= smtp[:port] %>
-SMTP_AUTH: <%= smtp[:auth] %>
-SMTP_USERNAME: <%= smtp[:username] %>
-SMTP_PASSWORD: <%= smtp[:password] %>
-SMTP_DOMAIN: <%= smtp[:domain] %>
-SMTP_TLS: <%= smtp[:tls] %>
+SMTP_HOST: <%= @smtp[:host] %>
+SMTP_PORT: <%= @smtp[:port] %>
+SMTP_AUTH: <%= @smtp[:auth] %>
+SMTP_USERNAME: <%= @smtp[:username] %>
+SMTP_PASSWORD: <%= @smtp[:password] %>
+SMTP_DOMAIN: <%= @smtp[:domain] %>
+SMTP_TLS: <%= @smtp[:tls] %>
 
 
 # staging specific values
