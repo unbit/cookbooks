@@ -26,7 +26,7 @@ staging:
     RACK_ENV: production
     RAILS_ENV: production
     SECRET_KEY_BASE: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-    RIOT_API_KEY   : XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+    RIOT_API_KEY   : <%= @riot_key %>
     DEVISE_SECRET_KEY: <%= @devise_key %>
 # production specific values
 production:
