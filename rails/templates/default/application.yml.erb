@@ -6,7 +6,7 @@
 
 # Signed cookies secret key, should be generated with rake secret
 SECRET_KEY_BASE: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-RIOT_API_KEY   : XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+RIOT_API_KEY   : <%= @riot_key %>
 DEVISE_SECRET_KEY: <%= @devise_key %>
 REDIS_URL: <%= @redis_url %>
 
