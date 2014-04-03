@@ -7,5 +7,6 @@ node[:deploy].each do |application, deploy|
     user 'deploy'
     command 'bundle exec rake assets:precompile'
     environment 'RAILS_ENV' => rails_env
+    notifies :restart, 'unicorn'
   end
 end
